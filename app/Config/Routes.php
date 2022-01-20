@@ -39,18 +39,6 @@ if(!defined('PUBLIC_NAMESPACE'))define('PUBLIC_NAMESPACE', "App\Controllers\Publ
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->group("/",function ($routes){
-    $routes->get('login', 'LoginController::index', ["as"=>"login", "namespace"=>PUBLIC_NAMESPACE]);
-    $routes->get('home', 'HomeController::index', ["as"=>"home_public", "namespace"=>PUBLIC_NAMESPACE]);
-    $routes->get('peliculas', 'PeliculasController::index', ["namespace"=>PUBLIC_NAMESPACE]);
-    $routes->get('prueba', 'PruebaController::index', ["as"=>"pruebaAjax", "namespace"=>PUBLIC_NAMESPACE]);
-    $routes->get('parametro/(:any)', 'PruebaController::parametro/$1', ["namespace"=>PUBLIC_NAMESPACE]);
-});
-
-$routes->group("admin",function ($routes){
-    $routes->get('home', 'HomeController::index', ["as"=>"home_admin", "namespace"=>ADMIN_NAMESPACE]);
-});
-
 
 
 /*
