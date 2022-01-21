@@ -16,7 +16,6 @@ class Restaurants extends Seeder
         $restaurantsBuilder = $this->db->table('restaurants');
  
         $restaurants = [
-            //id name description address latitude longitude reviewAverage numReviews
             [
                 'name' => "Catedral del Pescaíto",
                 'description' => "Es una lástima que cierre, Joaquín esperamos que regreses muy pronto. Tu amabilidad y calidad de los productos avalan tu buen hacer. Una",

@@ -16,7 +16,6 @@ class Reviews extends Seeder
         $reviewsBuilder = $this->db->table('reviews');
  
         $reviews = [
-            //id name description address latitude longitude reviewAverage numReviews
             [
                 'description' => "Muy malo",
                 'punctuation' => 4,

@@ -50,7 +50,7 @@ class Reviews extends Migration
         ]);
             
         $this->forge->addPrimaryKey('id',true);
-        $this->forge->addForeignKey('restaurant_id','restaurant','id','CASCADE','SET NULL');
+        $this->forge->addForeignKey('restaurant_id','restaurants','id','CASCADE','SET NULL');
         $this->forge->createTable('reviews');
 
         $this->db->enableForeignKeyChecks();
