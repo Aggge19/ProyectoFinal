@@ -56,7 +56,7 @@ class Restaurants extends Migration
                 'null' => false,
             ]
         ]);
-        $this->forge->addPrimaryKey('id');
+        $this->forge->addPrimaryKey('id', true);
         $this->forge->createTable('restaurants');
     }
 

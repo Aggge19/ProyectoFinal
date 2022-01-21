@@ -29,6 +29,12 @@ class Reviews extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '255',
             ],
+            'restaurant_id' => [
+                'type'       => 'INT',
+                'constraint' => 5,
+                'unsigned'   => true,
+                'null'       => true,
+            ],
             'updated_at' => [
                 'type' => 'DATETIME',
                 'null' => false,
@@ -40,12 +46,6 @@ class Reviews extends Migration
             'deleted_at' => [
                 'type' => 'DATETIME',
                 'null' => false,
-            ],
-            'restaurant_id' => [
-                'type'       => 'INT',
-                'constraint' => 5,
-                'unsigned'   => true,
-                'null'       => true,
             ]
         ]);
             
