@@ -27,7 +27,6 @@ class Users extends Seeder
             ]
          ];
  
-         $usersBuilder->insertBatch($users);
- 
+        $usersBuilder->insertBatch($users);
     }
 }
