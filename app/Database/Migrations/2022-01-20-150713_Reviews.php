@@ -21,7 +21,7 @@ class Reviews extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'punctuation' => [
+            'punctuation' => [//posible int
                 'type' => 'VARCHAR',
                 'constraint' => '255',
             ],
