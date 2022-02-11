@@ -35,13 +35,15 @@ class Restaurants extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'reviewAverage' => [//posible int
-                'type' => 'VARCHAR',
-                'constraint' => '255',
+            'reviewAverage' => [
+                'type' => 'INT',
+                'constraint' => 5,
+                'unsigned' => true,
             ],
-            'numReviews' => [//posible int
-                'type' => 'VARCHAR',
-                'constraint' => '255',
+            'numReviews' => [
+                'type' => 'INT',
+                'constraint' => 5,
+                'unsigned' => true,
             ],
             'updated_at' => [
                 'type' => 'DATETIME',

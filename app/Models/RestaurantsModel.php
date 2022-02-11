@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Database\Migrations\Restaurants;
+use App\Entities\Restaurants;
 use CodeIgniter\Model;
 
 class RestaurantsModel extends Model
