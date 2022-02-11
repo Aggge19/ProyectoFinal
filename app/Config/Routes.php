@@ -27,6 +27,7 @@ $routes->setAutoRoute(false);
 
 if(!defined('ADMIN_NAMESPACE'))define('ADMIN_NAMESPACE', "App\Controllers\Administration");
 if(!defined('PUBLIC_NAMESPACE'))define('PUBLIC_NAMESPACE', "App\Controllers\PublicSection");
+if(!defined('REST_NAMESPACE'))define('REST_NAMESPACE', "App\Controllers\REST");
 
 
 /*
@@ -40,6 +41,9 @@ if(!defined('PUBLIC_NAMESPACE'))define('PUBLIC_NAMESPACE', "App\Controllers\Publ
 $routes->get('/', 'Home::index');
 
 
+$routes->group('rest', function ($routes) {
+    $routes->get('restaurants', 'RestaurantsController::getRestaurants', ['namespace' => REST_NAMESPACE]);
+});
 
 /*
  * --------------------------------------------------------------------
